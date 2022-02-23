@@ -19,4 +19,15 @@ isAsci [] = True
 isAsci [x] = True 
 isAsci (x:y:xs) = x <= y && isAsci(y:xs)
 
--- -- Q4
+-- -- Q4 waft check if there is path that exists from node a to b
+suc :: Int -> [(Int,Int)] -> [Int]
+suc x [] = []
+suc x ((y,z):list) =
+    if x == y then z : suc x list
+    else suc x list
+
+path :: Int -> Int -> [Int] -> [(Int,Int)] -> Bool
+path src dst visited edges
+    | src == dst = True
+    | src `elem` visited = False
+    | otherwise = any (\nxt -> path nxt dst (src : visited) edges) (suc src edges)
