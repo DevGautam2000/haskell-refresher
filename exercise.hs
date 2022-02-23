@@ -26,8 +26,8 @@ suc x ((y,z):list) =
     if x == y then z : suc x list
     else suc x list
 
-path :: Int -> Int -> [Int] -> [(Int,Int)] -> Bool
-path src dst visited edges
+hasPath :: Int -> Int -> [Int] -> [(Int,Int)] -> Bool
+hasPath src dst visited edges
     | src == dst = True
     | src `elem` visited = False
-    | otherwise = any (\nxt -> path nxt dst (src : visited) edges) (suc src edges)
+    | otherwise = any (\nxt -> hasPath nxt dst (src : visited) edges) (suc src edges)
