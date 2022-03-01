@@ -10,4 +10,3 @@ readFromFile = do
     content <- hGetContents fp
     putStrLn content
     hClose fp
-

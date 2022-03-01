@@ -21,8 +21,13 @@ doubleEvenNum x =
    else x*2
 
 -- case
+
 getJob :: Int -> String
 getJob age = case age of
    18 -> "You don't get the job"
    25 -> "You get the job"
    _ -> "Go away you are not even eligible"
+
+
+main3 = putStrLn "Hello World"
+

@@ -18,7 +18,7 @@ toText (isPall,num) =
 
 isPallindrome :: Int -> String 
 isPallindrome = toText.pallindrome
-    
+
 main = do
     print $isPallindrome 232
     print $isPallindrome 32
