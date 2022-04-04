@@ -18,6 +18,13 @@ fact2 n | n == 0 = 1
         | n /= 0 = n * fact2 (n-1)
 fact2 _ = 1
 
+isletter :: Char -> Bool
+isletter x = x `elem` ['a'..'z'] || x `elem` ['A'..'Z']
+
+sorted   :: [Int] -> Bool
+sorted [] = True
+sorted [x] = True 
+sorted (x:y:zs) = x<=y && sorted (y:zs)
 
 -- Where clause
 -- the following function calculates ax^2 + bx + c

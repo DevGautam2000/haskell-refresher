@@ -1,5 +1,5 @@
 
-add = do 
+add = do
     let a=10
     let b=20
     putStr "Addition is: "
@@ -38,19 +38,14 @@ negNum = 5 - (-4)
 
 
 -- sqrt of floating points
-num9 = 9 
+num9 = 9
 sqrt9 = sqrt num9
 
 -- sqrt of integer 
-num36 = 36 :: Int 
+num36 = 36 :: Int
 sqrt36 = sqrt (fromIntegral num36)
 
 
 main = do
     add
-    
 
-
-
-
-    
