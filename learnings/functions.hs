@@ -2,6 +2,7 @@ add :: Int->Int->Int --function declaration
 add x y  = x+y
 
 
+
 -- patter matching
 fact :: Int->Int
 fact 0=1 --pattern to be matched

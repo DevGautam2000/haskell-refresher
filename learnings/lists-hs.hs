@@ -4,7 +4,7 @@ natural5 = [1,2,3,4,5]
 
 natural10 = natural5 ++ [6,7,8,9,10] -- con catenation 
 
-anotherWay = 2:4:5:6:[] 
+anotherWay = 2:4:5:6:[]
 
 moreNatural = 12:13:natural10 --output:  [12,13,1,2,3,4,5,6,7,8,9,10]
 leng = length moreNatural
@@ -55,6 +55,8 @@ sumOfLists = zipWith (+) [1,2,3] [3,2,1]
 greaterThan5 = filter (>5) [2,3,4,10,67]
 
 evensTill40 = takeWhile (<=40) [2,4..]
+
+dropW = dropWhile (<3) [1,2,3,4,5]
 
 prodOfListL = foldl (*) 1 [2,3,4,5] -- product from left to right
 prodOfListR = foldr (*) 2 [2,3,4,5] -- product from right to left
