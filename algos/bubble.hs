@@ -5,9 +5,19 @@ bSort s = case bSort' s of
     | otherwise -> bSort t
   where
     bSort' (x : y : xs)
-      | x > y = y : (bSort' (x : xs))
-      | otherwise = x : (bSort' (y : xs))
+      | x > y = y : bSort' (x : xs)
+      | otherwise = x : bSort' (y : xs)
     bSort' s = s
+
+secondloop [x] = [x]
+secondloop (x : y : xs)
+  | x <= y = x : secondloop (y : xs)
+  | otherwise = y : secondloop (x : xs)
+
+firstloop 0 xs = xs
+firstloop n xs = firstloop (n -1) (secondloop xs)
+
+bubble_sort xs = firstloop n xs where n = length xs
 
 {-
 bSort [] = []

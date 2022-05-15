@@ -23,7 +23,7 @@ There are 4 different modules:
 2. Data.Char
 3. Data.Map(Map)
 4. Data.Set
-s
+
 -}
 
 checkX x =

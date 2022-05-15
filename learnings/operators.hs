@@ -46,6 +46,4 @@ num36 = 36 :: Int
 sqrt36 = sqrt (fromIntegral num36)
 
 
-main = do
-    add
 

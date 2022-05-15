@@ -8,4 +8,5 @@ myMap n = Map.fromList (map makePair [1 .. n])
 
 main = do
   putStrLn ("for Data.Map")
-  print (myMap 3)
+  let map = myMap 3
+  print (map)

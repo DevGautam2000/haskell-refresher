@@ -7,7 +7,7 @@
 
 --Pallindrom
 
-ispallin1 xs = xs == (reverse xs)
+ispallin1 xs = xs == reverse xs
 
 ispallin2 :: Eq a => [a] -> Bool
 ispallin2 [] = True

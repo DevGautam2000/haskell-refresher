@@ -1,8 +1,9 @@
+binsearch :: Ord a => [a] -> a -> Int -> Int -> Maybe Int
 binsearch xs value low high
-  | high < low = -1
+  | high < low = Nothing
   | xs !! mid > value = binsearch xs value low (mid -1)
-  | xs !! mid < value = binsearch xs value (mid -1) high
-  | otherwise = mid
+  | xs !! mid < value = binsearch xs value (mid + 1) high
+  | otherwise = Just mid
   where
     mid = low + (high - low) `div` 2
 

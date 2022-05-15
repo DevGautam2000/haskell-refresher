@@ -1,13 +1,12 @@
-
-isOdd ::Int -> Bool
+isOdd :: Int -> Bool
 isOdd x
-    | even x = False
-    | otherwise = True
+  | even x = False
+  | otherwise = True
 
-isEven  = even
+isEven = even
 
 whatLanguage :: String -> String
 whatLanguage s
-    | s == ".cpp" = "C plus plus"
-    | s == ".java" = "Java"
-    | otherwise = "Python"
+  | s == ".cpp" = "C plus plus"
+  | s == ".java" = "Java"
+  | otherwise = "Python"
