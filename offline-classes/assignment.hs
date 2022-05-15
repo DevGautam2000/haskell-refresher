@@ -5,7 +5,7 @@ import Data.List (intercalate, sort)
 {-
           AUTHOR : GAUTAM CHANDRA SAHA
           DATE & TIME: Tue, April 19,2022 AT 12:44
-          DESCRIPTION: HASKELL ASSIGMENT 2022
+          DESCRIPTION: HASKELL ASSIGNMENT 2022
           GROUP MEMBERS:
 ?          -  ADITTYA PRASAD
 ?          -  SUMAN GURUNG
