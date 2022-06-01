@@ -3,7 +3,6 @@ import Data.Either
 import Data.List (intercalate, sort)
 
 {-
-          AUTHOR : GAUTAM CHANDRA SAHA
           DATE & TIME: Tue, April 19,2022 AT 12:44
           DESCRIPTION: HASKELL ASSIGNMENT 2022
           GROUP MEMBERS:
@@ -12,6 +11,7 @@ import Data.List (intercalate, sort)
 ?          -  RISHABH PRASAD
 ?          -  GAUTAM CHANDRA SAHA
 
+! - GROUP 10
     * DEADLINE: 17 May 2022
 
     QUESTION: write a haskell program to implement various functional behaviours and function calls
