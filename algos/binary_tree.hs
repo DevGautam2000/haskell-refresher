@@ -4,15 +4,6 @@ data TreeNode = LeftN Int | RightN Int | NULL | ROOT Int
 binTree :: [(TreeNode, TreeNode)]
 binTree = [(LeftN 20, RightN 25), (LeftN 10, RightN 30), (LeftN 2, RightN 3), (NULL, NULL), (NULL, NULL), (LeftN 29, RightN 40), (NULL, NULL)]
 
-{-
-            20
-          /    \
-        10     30
-       /  \   /  \
-      2    3 29   40
-
- -}
-
 isTreeEmpty tree
   | null tree = True
   | otherwise = False
