@@ -35,3 +35,30 @@ main = do
 
   putStrLn "\nTraverse new Tree:"
   traverseTree ntree 0
+
+{-
+
+INPUT/OUTPUT
+
+Check if tree is empty
+False
+
+Traverse Tree:
+"Node1: LeftN 20 LeftN 10 RightN 30"
+"Node2: LeftN 10 LeftN 2 RightN 3"
+"Node3: LeftN 2 NULL NULL"
+"Node6: LeftN 29 NULL NULL"
+"DONE!"
+
+Insert a node at Tree:
+[(LeftN 20,RightN 25),(LeftN 10,RightN 30),(LeftN 2,RightN 3),(NULL,NULL),(NULL,NULL),(LeftN 29,RightN 40),(LeftN 400,RightN 500),(NULL,NULL)]
+
+Traverse new Tree:
+"Node1: LeftN 20 LeftN 10 RightN 30"
+"Node2: LeftN 10 LeftN 2 RightN 3"
+"Node3: LeftN 2 NULL NULL"
+"Node6: LeftN 29 LeftN 400 RightN 500"
+"Node7: LeftN 400 NULL NULL"
+"DONE!"
+
+ -}
