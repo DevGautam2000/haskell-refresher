@@ -7,6 +7,6 @@ myMap n = Map.fromList (map makePair [1 .. n])
     makePair x = (x, [x])
 
 main = do
-  putStrLn ("for Data.Map")
+  putStrLn "for Data.Map"
   let map = myMap 3
-  print (map)
+  print map

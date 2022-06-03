@@ -10,3 +10,13 @@ readFromFile = do
   content <- hGetContents fp
   putStrLn content
   hClose fp
+
+checkIfFileIsEmpty :: IO ()
+checkIfFileIsEmpty = do
+  fp <- openFile "read.txt" ReadMode
+  content <- hIsEOF fp
+  firstLine <-
+    if not content
+      then hGetLine fp
+      else return "empty"
+  putStrLn "done!"

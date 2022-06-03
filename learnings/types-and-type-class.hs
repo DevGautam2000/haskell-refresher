@@ -151,3 +151,15 @@ instance MyEq Shirt where
   areEqual _ _ = False
 
 newSize = areEqual M S
+
+data Worker = Manager String Int | Analyst String Float
+  deriving (Show)
+
+getWorker :: Worker -> String
+getWorker (Manager name age) = "Name: " ++ name ++ " Age: " ++ show age
+getWorker (Analyst name sal) = "Name: " ++ name ++ " Salary: " ++ show sal
+
+-- getWorker (Analyst "dfhg" 12.3)
+-- "Name: dfhg Salary: 12.3"
+-- getWorker (Manager "benchod" 12)
+-- "Name: benchod Age: 12"

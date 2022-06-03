@@ -5,7 +5,7 @@
     rev_aux acc [] = acc
     rev_aux acc(x:xs)= rev_aux(x:acc) xs -}
 
---Pallindrom
+--Pallindrome
 
 ispallin1 xs = xs == reverse xs
 
